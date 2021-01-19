@@ -19,7 +19,7 @@
 
 Incoming...
 
-<!-- ![SQL Design Plan](/TravelAPI/wwwroot/img/TODO.png "Many-to-many Relationship Schema for X & Y") -->
+![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
 
 ## User Stories
 
