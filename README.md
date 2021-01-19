@@ -23,7 +23,14 @@ Incoming...
 
 ## User Stories
 
-- Incoming...
+| **User Stories**  	|   	|
+|---	|---	|
+|  *1* 	|  As a user, I want to GET and POST reviews about travel destinations. 	|
+|  *2* 	|  As a user, I want to GET reviews by country or city. 	|
+|  *3* 	|  As a user, I want to see the most popular travel destinations by number of reviews or by overall rating. 	|
+|  *4* 	|  As a user, I want to PUT and DELETE reviews, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.) 	|
+|  *5* 	|  As a user, I want to look up random destinations just for fun. 	|
+
 
 ---
 
