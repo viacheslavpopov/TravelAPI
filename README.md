@@ -21,6 +21,10 @@ Incoming...
 
 <!-- ![SQL Design Plan](/TravelAPI/wwwroot/img/TODO.png "Many-to-many Relationship Schema for X & Y") -->
 
+## User Stories
+
+- Incoming...
+
 ---
 
 ## Stretch Goals
