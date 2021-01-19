@@ -17,9 +17,36 @@ namespace TravelAPI.Controllers
         }
 
         [HttpGet]
-        public ActionResult<IEnumerable<Review>> Get(string title, int rating, string body, bool wouldRecommend)
+        public ActionResult<IEnumerable<Review>> Get(string title, int rating, bool wouldRecommend, Destination destination)
         {
-            return _db.Reviews.ToList();
+            var query = _db.Reviews.AsQueryable();
+
+            if (title != null)
+            {
+                query = query.Where(entry => entry.Title == title);
+            }
+
+            if (rating != 0)
+            {
+                query = query.Where(entry => entry.Rating == rating);
+            }
+
+            if (wouldRecommend == true)
+            {
+                query = query.Where(entry => entry.WouldRecommend == wouldRecommend);
+            }
+
+            if (wouldRecommend == false)
+            {
+                query = query.Where(entry => entry.WouldRecommend == wouldRecommend);
+            }
+
+            if (destination != null)
+            {
+                query = query.Where(entry => entry.Destination == destination);
+            }
+
+            return query.ToList();
         }
 
         [HttpPost]
@@ -27,6 +54,12 @@ namespace TravelAPI.Controllers
         {
             _db.Reviews.Add(review);
             _db.SaveChanges();
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Review> Get(int id)
+        {
+            return _db.Reviews.FirstOrDefault(entry => entry.ReviewId == id);
         }
 
     }
