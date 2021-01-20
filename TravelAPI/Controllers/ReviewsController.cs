@@ -32,15 +32,10 @@ namespace TravelAPI.Controllers
                 query = query.Where(entry => entry.Rating == rating);
             }
 
-            if (wouldRecommend == true)
-            {
-                query = query.Where(entry => entry.WouldRecommend == wouldRecommend);
-            }
-
-            if (wouldRecommend == false)
-            {
-                query = query.Where(entry => entry.WouldRecommend == wouldRecommend);
-            }
+            // if (wouldRecommend == true)
+            // {
+            query = query.Where(entry => entry.WouldRecommend == wouldRecommend);
+            // }
 
             if (destination != null)
             {
