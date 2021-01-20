@@ -8,8 +8,8 @@ using TravelAPI.Models;
 namespace TravelAPI.Migrations
 {
     [DbContext(typeof(TravelAPIContext))]
-    [Migration("20210120175110_AddSeedDataToContext")]
-    partial class AddSeedDataToContext
+    [Migration("20210120185532_TestRemoveDestinationFromReview")]
+    partial class TestRemoveDestinationFromReview
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -98,15 +98,51 @@ namespace TravelAPI.Migrations
                             ReviewId = 1,
                             Body = "Pretty good.",
                             DestinationId = 1,
-                            Rating = 5,
+                            Rating = 4,
                             Title = "Review #01",
                             WouldRecommend = true
+                        },
+                        new
+                        {
+                            ReviewId = 2,
+                            Body = "Pretty good.",
+                            DestinationId = 1,
+                            Rating = 4,
+                            Title = "Review #01",
+                            WouldRecommend = true
+                        },
+                        new
+                        {
+                            ReviewId = 3,
+                            Body = "Pretty bad.",
+                            DestinationId = 2,
+                            Rating = 2,
+                            Title = "Review #02",
+                            WouldRecommend = false
+                        },
+                        new
+                        {
+                            ReviewId = 4,
+                            Body = "Amaaaaaaaazing",
+                            DestinationId = 3,
+                            Rating = 5,
+                            Title = "Review #03",
+                            WouldRecommend = true
+                        },
+                        new
+                        {
+                            ReviewId = 5,
+                            Body = "Middle of the Road",
+                            DestinationId = 3,
+                            Rating = 3,
+                            Title = "Review #04",
+                            WouldRecommend = false
                         });
                 });
 
             modelBuilder.Entity("TravelAPI.Models.Review", b =>
                 {
-                    b.HasOne("TravelAPI.Models.Destination", "Destination")
+                    b.HasOne("TravelAPI.Models.Destination")
                         .WithMany("Reviews")
                         .HasForeignKey("DestinationId")
                         .OnDelete(DeleteBehavior.Cascade);

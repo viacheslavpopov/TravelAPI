@@ -19,10 +19,11 @@ namespace TravelAPI.Models
             builder.Entity<Review>()
 
                 .HasData(
-                    new Review { ReviewId = 1, Title = "Review #01", Rating = 4, Body = "Pretty good." , WouldRecommend = true , DestinationId = 1},
-                    new Review { ReviewId = 2, Title = "Review #02", Rating = 2, Body = "Pretty bad." , WouldRecommend = false , DestinationId = 2},
-                    new Review { ReviewId = 3, Title = "Review #03", Rating = 5, Body = "Amaaaaaaaazing" , WouldRecommend = true , DestinationId = 3},
-                    new Review { ReviewId = 4, Title = "Review #04", Rating = 3, Body = "Middle of the Road" , WouldRecommend = false , DestinationId = 2}
+                    new Review { ReviewId = 1, Title = "Review #01", Rating = 4, Body = "Pretty good." , WouldRecommend = true , DestinationId = 1 },
+                    new Review { ReviewId = 2, Title = "Review #01", Rating = 4, Body = "Pretty good." , WouldRecommend = true , DestinationId = 1 },
+                    new Review { ReviewId = 3, Title = "Review #02", Rating = 2, Body = "Pretty bad." , WouldRecommend = false , DestinationId = 2 },
+                    new Review { ReviewId = 4, Title = "Review #03", Rating = 5, Body = "Amaaaaaaaazing" , WouldRecommend = true , DestinationId = 3 },
+                    new Review { ReviewId = 5, Title = "Review #04", Rating = 3, Body = "Middle of the Road" , WouldRecommend = false , DestinationId = 3 }
                 );
 
             builder.Entity<Destination>()
