@@ -19,23 +19,21 @@ namespace TravelAPI.Models
             builder.Entity<Review>()
 
                 .HasData(
-                    new Review { ReviewId = 1, Title = "Review #01", Rating = 5, Body = "Pretty good." , WouldRecommend = true , DestinationId = 1}
+                    new Review { ReviewId = 1, Title = "Review #01", Rating = 4, Body = "Pretty good." , WouldRecommend = true , DestinationId = 1},
+                    new Review { ReviewId = 2, Title = "Review #02", Rating = 2, Body = "Pretty bad." , WouldRecommend = false , DestinationId = 2},
+                    new Review { ReviewId = 3, Title = "Review #03", Rating = 5, Body = "Amaaaaaaaazing" , WouldRecommend = true , DestinationId = 3},
+                    new Review { ReviewId = 4, Title = "Review #04", Rating = 3, Body = "Middle of the Road" , WouldRecommend = false , DestinationId = 2}
                 );
 
             builder.Entity<Destination>()
 
                 .HasData(
-                    new Destination { DestinationId = 1, City = "Barcelona", State = "Catalonia", Country = "Spain" } //, Reviews = new List<Review> { ReviewId = 1, ReviewId = 2, ReviewId = 3 } }
+                    new Destination { DestinationId = 1, City = "Barcelona", State = "Catalonia", Country = "Spain" },
+                    new Destination { DestinationId = 2, City = "Portland", State = "Oregon", Country = "USA" },
+                    new Destination { DestinationId = 3, City = "Denpasar", State = "", Country = "Bali"},
+                    new Destination { DestinationId = 4, City = "Helsinki", State = "Etela Province", Country = "Finland" },
+                    new Destination { DestinationId = 5, City = "Perth", State = "Western Australia", Country = "Australia"}
                 );
-
-                //so far tried...
-                //List<Reviews> BarcelonaReviews = new List<Review>
-                //Reviews = {1, 2, 3}
-                //Reviews = {ReviewId = 1, 2, 3}
-                //Reviews = {ReviewId = 1, ReviewId = 2, ReviewId = 3}
-                //Reviews = { new ReviewId = 1, 2, 3}
-                 //List<Reviews> BarcelonaReviews = new List<Review>{ ReviewId = 1, ReviewId = 2, ReviewId = 3} }
-                 //{ { ReviewId = 1, Title = "Review #01", Rating = 5, Body = "Pretty good." , WouldRecommend = true }, ReviewId = 2, ReviewId = 3 }
         }
     }
 }
