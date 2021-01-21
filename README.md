@@ -41,6 +41,8 @@ Incoming...
 ## Technologies Used/Required
 
 - [Postman](https://www.postman.com/downloads/)
+- Swashbuckle, for OpenAPI implementations for .NET with Swagger
+- [Swagger, For API Documentation](https://swagger.io/)
 - C# v 7.3
 - .NET Core CLI v 2.2
 - Identity, ASP.NET MVC Core
@@ -179,3 +181,10 @@ Email: danithompson74 [at] gmail.com
 ### License
 
 _MIT_ Copyright (c) 2021 _* Joe Nero, Tawnee Harris, Danielle Thompson*_
+
+
+
+Setup References:
+[ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
+[Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
+[Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
