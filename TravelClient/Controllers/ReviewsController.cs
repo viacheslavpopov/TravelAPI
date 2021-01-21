@@ -12,7 +12,7 @@ namespace TravelClient.Controllers
     {
         public IActionResult Index()
         {
-            var allReviews = Review.GetDestinations();
+            var allReviews = Review.GetReviews();
             return View(allReviews);
         }
     }

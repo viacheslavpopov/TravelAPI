@@ -21,7 +21,7 @@ namespace TravelClient.Models
             var result = apiCallTask.Result;
 
             JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(result);
-            List<Review> reviewList = JsonConvert.DeserializeObject<List<Review>>(jsonResponse.ToString()); 
+            List<Review> reviewList = JsonConvert.DeserializeObject<List<Review>>(jsonResponse.ToString());
 
             return reviewList;
         }

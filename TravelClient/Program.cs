@@ -1,26 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
-using RestSharp;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace TravelClient
 {
     public class Program
     {
-        public static void Main()
+        public static void Main(string[] args)
         {
-            var apiCallTask = ApiHelper.ApiCall; // ("[YOUR-API-KEY-HERE]"); // Add back into end of line w/ tokenization
-            var result = apiCallTask.Result;
-            JObject jsonResponse = JsonConvert.DeserializeObject<JObject>(result);
-            Console.WriteLine(jsonResponse["results"]);
+            CreateWebHostBuilder(args).Build().Run();
         }
-    }
-    public class ApiHelper
-    {
-        public static async Task<string> ApiCall(string apiKey)
-        {
-            RestClient = new RestClient("https://api.nytimes.com/svc/topstories/v2");
-        }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .UseStartup<Startup>();
     }
 }
