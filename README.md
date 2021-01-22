@@ -1,3 +1,4 @@
+
 <div class="center">
 
   # TravelAPI
@@ -9,17 +10,58 @@
   #### By Joe Nero, Tawnee Harris, Danielle Thompson
 </div>
 
-## Preview
-
-<!-- [![Splash-Page.png](https://i.postimg.cc/T1k9NHCd/Splash-Page.png)](https://postimg.cc/QKT1Hm2w) -->
-
 ---
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-## Description
+- [TravelAPI](#travelapi)
+      - [In-class Project for Epicodus in ASP.NET CLI Core & Building an API](#in-class-project-for-epicodus-in-aspnet-cli-core--building-an-api)
+      - [Project Began on 1.19.2021.](#project-began-on-1192021)
+      - [By Joe Nero, Tawnee Harris, Danielle Thompson](#by-joe-nero-tawnee-harris-danielle-thompson)
+  - [📖 Description](#-description)
+  - [🐛 Known bugs](#-known-bugs)
+  - [User Stories](#user-stories)
+  - [Stretch Goals](#stretch-goals)
+  - [🛠️ Technologies Used/Required](#-technologies-usedrequired)
+  - [🔧 Installation Requirements](#-installation-requirements)
+      - [Installing Git](#installing-git)
+          - [For Mac Users](#for-mac-users)
+          - [For Windows Users](#for-windows-users)
+      - [Installing C#, .NET, dotnet script, & MySQL](#installing-c-net-dotnet-script--mysql)
+          - [For Mac](#for-mac)
+          - [For Windows (10+)](#for-windows-10)
+      - [For Mac & Windows Operating Systems](#for-mac--windows-operating-systems)
+      - [Clone or Download the Project](#clone-or-download-the-project)
+        - [To Clone](#to-clone)
+        - [To Download](#to-download)
+        - [.NET Core Commands](#net-core-commands)
+      - [Setting up a Local Database](#setting-up-a-local-database)
+      - [MySQL Password Protection & .gitignore](#mysql-password-protection--gitignore)
+      - [Import Database in MySQL Workbench (filename: danielle_thompson_bakery)](#import-database-in-mysql-workbench-filename-danielle_thompson_bakery)
+      - [Import Database with Entity Framework Core](#import-database-with-entity-framework-core)
+      - [API Documentation](#api-documentation)
+  - [Accessing Swagger Documentation and SwaggerUI](#accessing-swagger-documentation-and-swaggerui)
+        - [API Setup References:](#api-setup-references)
+    - [📫 Contact](#-contact)
+    - [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+___
+
+## 📖 Description
 
 Incoming...
 
 ![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
+
+## 🐛 Known bugs
+
+- Home splash page is not fully set up, nor are all our client-side views fully set up or created - although all CRUD routes are in place.
+
+[Please report any bugs found here.](https://github.com/dani-t-codes/TravelAPI.Solution/issues)
+
 
 ## User Stories
 
@@ -38,11 +80,12 @@ Incoming...
 
 - Incoming ...
 
-## Technologies Used/Required
+## 🛠️ Technologies Used/Required
 
-- [Postman](https://www.postman.com/downloads/)
-- Swashbuckle, for OpenAPI implementations for .NET with Swagger
-- [Swagger, For API Documentation](https://swagger.io/)
+- [Postman v.7.22.1](https://www.postman.com/downloads/)
+- [Swashbuckle, v. 5.6.2](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md), for OpenAPI implementations for .NET with Swagger.
+- [SwaggerUI, v. 5.6.3](https://www.nuget.org/packages/Swashbuckle.AspNetCore.SwaggerUI/)
+- [Swagger, For API Documentation, v. 3.0.1](https://swagger.io/)
 - C# v 7.3
 - .NET Core CLI v 2.2
 - Identity, ASP.NET MVC Core
@@ -50,12 +93,12 @@ Incoming...
 - Entity Framework Core 2.2.6, CRUD, RESTful routing
 - dotnet script, REPL
 - Razor
-<!-- - [SQL Design Planner](https://ondras.zarovi.cz/sql/demo/) -->
+- [SQL Design Planner](https://ondras.zarovi.cz/sql/demo/)
 - [Visual Code Studio](https://code.visualstudio.com/)
 
 ---
 
-## Installation Requirements
+## 🔧 Installation Requirements
 
 #### Installing Git
 
@@ -165,26 +208,35 @@ When the project is opened on your local machine...
 2. Run the command `dotnet ef database update` to create the database on your local system.
 3. If any updates to the database are needed with code changes, run `dotnet ef migrations add <NewMigrationNameHere>`, then `dotnet ef database update` to complete the update.
 
+
+#### API Documentation
+
+Feel free to explore the API endpoints in Postman.
+
+## Accessing Swagger Documentation and SwaggerUI
+
+Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5004/swagger` to view and interact with the Swashbuckle SwaggerUI.
+
+##### API Setup References:
+[ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
+[Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
+[Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
+[Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
+
 ---
 
-## Known bugs
 
-No known bugs yet. Incoming ...
+### 📫 Contact
 
-[Please report any bugs found here.](https://github.com/dani-t-codes/TravelAPI.Solution/issues)
+Find us at...
 
-### Contact
-
-Find me on [GitHub](https://github.com/dani-t-codes/)
+- [Danielle's Github](https://github.com/dani-t-codes/)
 Email: danithompson74 [at] gmail.com
+- [Joe's Github](https://github.com/joey3001)
+Email: josephnero111 [at] gmail.com
+- [Tawnee's Github](https://github.com/tawneeh)
+Email: tawneeh [at] icloud.com
 
 ### License
 
 _MIT_ Copyright (c) 2021 _* Joe Nero, Tawnee Harris, Danielle Thompson*_
-
-
-
-Setup References:
-[ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
-[Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
-[Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
