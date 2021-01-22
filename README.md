@@ -52,16 +52,7 @@ ___
 
 ## 📖 Description
 
-Incoming...
-
-![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
-
-## 🐛 Known bugs
-
-- Home splash page is not fully set up, nor are all our client-side views fully set up or created - although all CRUD routes are in place.
-
-[Please report any bugs found here.](https://github.com/dani-t-codes/TravelAPI.Solution/issues)
-
+Dotnet API and MVC project, meant to get and post travel reviews of various destinations a user has visited around the world.
 
 ## User Stories
 
@@ -73,12 +64,20 @@ Incoming...
 |  *4* 	|  As a user, I want to PUT and DELETE reviews, but only if I wrote them. (Start by requiring a user_name param to match the user_name of the author on the message. You can always try authentication later.) 	|
 |  *5* 	|  As a user, I want to look up random destinations just for fun. 	|
 
+![SQL Design Plan](SQL_Schema.png "One-to-many Relationship Schema for Reviews & Destinations")
+
+## 🐛 Known bugs
+
+- Home splash page is not fully set up, nor are all our client-side views fully set up or created - although all CRUD routes are in place.
+
+[Please report any bugs found here.](https://github.com/dani-t-codes/TravelAPI.Solution/issues)
 
 ---
 
 ## Stretch Goals
 
-- Incoming ...
+- Build out UI more.
+- Use SwaggerUI & SwaggerHub more extensively.
 
 ## 🛠️ Technologies Used/Required
 
@@ -208,14 +207,17 @@ When the project is opened on your local machine...
 2. Run the command `dotnet ef database update` to create the database on your local system.
 3. If any updates to the database are needed with code changes, run `dotnet ef migrations add <NewMigrationNameHere>`, then `dotnet ef database update` to complete the update.
 
-
 #### API Documentation
 
 Feel free to explore the API endpoints in Postman.
+Base URL: `http://localhost:5004`
 
-## Accessing Swagger Documentation and SwaggerUI
+
+## Accessing the SwaggerUI
 
 Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5004/swagger` to view and interact with the Swashbuckle SwaggerUI.
+
+![Swagger UI Endpoints](SwaggerUI_Endpoint.png "TravelAPI Endpoints")
 
 ##### API Setup References:
 [ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
