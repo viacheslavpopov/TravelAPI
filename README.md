@@ -15,36 +15,32 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [TravelAPI](#travelapi)
-      - [In-class Project for Epicodus in ASP.NET CLI Core & Building an API](#in-class-project-for-epicodus-in-aspnet-cli-core--building-an-api)
-      - [Project Began on 1.19.2021.](#project-began-on-1192021)
-      - [By Joe Nero, Tawnee Harris, Danielle Thompson](#by-joe-nero-tawnee-harris-danielle-thompson)
-  - [📖 Description](#-description)
-  - [🐛 Known bugs](#-known-bugs)
-  - [User Stories](#user-stories)
-  - [Stretch Goals](#stretch-goals)
-  - [🛠️ Technologies Used/Required](#-technologies-usedrequired)
-  - [🔧 Installation Requirements](#-installation-requirements)
-      - [Installing Git](#installing-git)
-          - [For Mac Users](#for-mac-users)
-          - [For Windows Users](#for-windows-users)
-      - [Installing C#, .NET, dotnet script, & MySQL](#installing-c-net-dotnet-script--mysql)
-          - [For Mac](#for-mac)
-          - [For Windows (10+)](#for-windows-10)
-      - [For Mac & Windows Operating Systems](#for-mac--windows-operating-systems)
-      - [Clone or Download the Project](#clone-or-download-the-project)
-        - [To Clone](#to-clone)
-        - [To Download](#to-download)
-        - [.NET Core Commands](#net-core-commands)
-      - [Setting up a Local Database](#setting-up-a-local-database)
-      - [MySQL Password Protection & .gitignore](#mysql-password-protection--gitignore)
-      - [Import Database in MySQL Workbench (filename: danielle_thompson_bakery)](#import-database-in-mysql-workbench-filename-danielle_thompson_bakery)
-      - [Import Database with Entity Framework Core](#import-database-with-entity-framework-core)
-      - [API Documentation](#api-documentation)
-  - [Accessing Swagger Documentation and SwaggerUI](#accessing-swagger-documentation-and-swaggerui)
-        - [API Setup References:](#api-setup-references)
-    - [📫 Contact](#-contact)
-    - [License](#license)
+- [📖 Description](#-description)
+- [User Stories](#user-stories)
+- [🐛 Known bugs](#-known-bugs)
+- [Stretch Goals](#stretch-goals)
+- [🛠️ Technologies Used/Required](#-technologies-usedrequired)
+- [🔧 Installation Requirements](#-installation-requirements)
+    - [Installing Git](#installing-git)
+        - [For Mac Users](#for-mac-users)
+        - [For Windows Users](#for-windows-users)
+    - [Installing C#, .NET, dotnet script, & MySQL](#installing-c-net-dotnet-script--mysql)
+        - [For Mac](#for-mac)
+        - [For Windows (10+)](#for-windows-10)
+    - [For Mac & Windows Operating Systems](#for-mac--windows-operating-systems)
+    - [Clone or Download the Project](#clone-or-download-the-project)
+      - [To Clone](#to-clone)
+      - [To Download](#to-download)
+      - [.NET Core Commands](#net-core-commands)
+    - [Setting up a Local Database](#setting-up-a-local-database)
+    - [MySQL Password Protection & .gitignore](#mysql-password-protection--gitignore)
+    - [Import Database in MySQL Workbench](#import-database-in-mysql-workbench)
+    - [Import Database with Entity Framework Core](#import-database-with-entity-framework-core)
+    - [API Documentation](#api-documentation)
+    - [Accessing the SwaggerUI](#accessing-the-swaggerui)
+      - [API Setup References](#api-setup-references)
+  - [📫 Contact](#-contact)
+  - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -191,7 +187,7 @@ When the project is opened on your local machine...
 - .DS_Store
 - appsettings.json
 
-#### Import Database in MySQL Workbench (filename: danielle_thompson_bakery)
+#### Import Database in MySQL Workbench
 
 1. Open MySQL Workbench and a Terminal/CMD. Run the command line `mysql -uroot-p[YOUR-PASSWORD]` with your password  in the proper place to open a server.
 2. From the top navigation bar, select 'Server' > 'Data Import'.
@@ -213,20 +209,20 @@ Feel free to explore the API endpoints in Postman.
 Base URL: `http://localhost:5004`
 
 
-## Accessing the SwaggerUI
+#### Accessing the SwaggerUI
 
 Launch the project from the TravelAPI project folder by typing `dotnet run` into the terminal. Input `http://localhost:5004/swagger` to view and interact with the Swashbuckle SwaggerUI.
 
 ![Swagger UI Endpoints](SwaggerUI_Endpoint.png "TravelAPI Endpoints")
 
-##### API Setup References:
+##### API Setup References
+
 [ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
 [Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
 [Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
 [Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
 
 ---
-
 
 ### 📫 Contact
 
