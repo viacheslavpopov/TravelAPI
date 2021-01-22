@@ -5,7 +5,7 @@
 
   #### In-class Project for Epicodus in ASP.NET CLI Core & Building an API
 
-  #### Project Began on 1.19.2021.
+  #### Project Began on 1.19.2021. Last updated 1.21.2021.
 
   #### By Joe Nero, Tawnee Harris, Danielle Thompson
 </div>
