@@ -7,7 +7,6 @@
 
   #### Project Began on 1.19.2021. Last updated 1.21.2021.
 
-  #### By Joe Nero, Tawnee Harris, Danielle Thompson
 </div>
 
 ---
@@ -215,15 +214,4 @@ Launch the project from the TravelAPI project folder by typing `dotnet run` into
 
 ![Swagger UI Endpoints](SwaggerUI_Endpoint.png "TravelAPI Endpoints")
 
-##### API Setup References
-
-[ASP.NET Core web API documentation with Swagger / OpenAPI](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0)
-[Swashbuckle and ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-5.0&tabs=visual-studio)
-[Swashbuckle Getting Started](https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md)
-[Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
-
 ---
-
-## License
-
-_MIT_ Copyright (c) 2021 _* Joe Nero, Tawnee Harris, Danielle Thompson*_
