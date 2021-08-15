@@ -133,7 +133,7 @@ Dotnet API and MVC project, meant to get and post travel reviews of various dest
 #### Clone or Download the Project
 
 ##### To Clone
-1. Once you have Git installed on your computer, go to this (GitHub repository)[https://github.com/dani-t-codes/TravelAPI.Solution].
+1. Once you have Git installed on your computer, go to this GitHub repository.
 2. Click the Green 'Code' button.
 3. Copy the HTTPS link, and open a Terminal or CMD on your local system.
 4. In the Terminal/CMD, navigate to your Desktop with the command `cd Desktop`.
@@ -223,17 +223,6 @@ Launch the project from the TravelAPI project folder by typing `dotnet run` into
 [Swashbuckle.AspNetCore REAMDE](https://github.com/domaindrivendev/Swashbuckle.AspNetCore#swashbuckleaspnetcoreswaggerui)
 
 ---
-
-## 📫 Contact
-
-Find us at...
-
-- [Danielle's Github](https://github.com/dani-t-codes/)
-Email: danithompson74 [at] gmail.com
-- [Joe's Github](https://github.com/joey3001)
-Email: josephnero111 [at] gmail.com
-- [Tawnee's Github](https://github.com/tawneeh)
-Email: tawneeh [at] icloud.com
 
 ## License
 
